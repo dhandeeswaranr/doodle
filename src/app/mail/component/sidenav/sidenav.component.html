@@ -1,0 +1,30 @@
+<mat-drawer-container class="nav-holder" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button> -->
+    <mat-list role="list">
+      <mat-list-item role="listitem" routerLinkActive="active">Inbox</mat-list-item>
+      <mat-list-item role="listitem">Starred</mat-list-item>
+      <mat-list-item role="listitem">Important</mat-list-item>
+      <mat-list-item role="listitem">Draft</mat-list-item>
+      <mat-list-item role="listitem">Spam</mat-list-item>
+      <mat-list-item role="listitem">Bin</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <div class="sidenav-content" (click)="drawer.toggle()">
+     <mat-tab-group>
+      <mat-tab ><ng-template mat-tab-label>
+            <mat-icon class="tab-icon">thumb_up</mat-icon>
+            Mail
+          </ng-template>
+          <app-inbox [mailDataContent]="mailDataContent"></app-inbox>
+      </mat-tab>
+      <mat-tab label="Social Medial">  <app-inbox [mailDataContent]="mailDataContent"></app-inbox></mat-tab>
+      <mat-tab label="Draft"> Content 3 </mat-tab>
+    </mat-tab-group>
+    
+  </div>
+</mat-drawer-container>

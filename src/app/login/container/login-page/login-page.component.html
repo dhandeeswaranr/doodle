@@ -1,0 +1,16 @@
+<section class="container">
+  <mat-card class="holder">
+    <form class="form">
+      <mat-form-field class="col-lg-12">
+        <input matInput placeholder="User Name" value="" [(ngModel)] ="loginId" [ngModelOptions]="{standalone: true}">
+      </mat-form-field><br>
+      <mat-form-field class="col-lg-12">
+        <input matInput type="password" placeholder="Password" value="">
+      </mat-form-field><br>
+      <div>
+        <button  mat-button routerLinkActive="active"  routerLink="mail" (click)="login()">Login</button>
+        <button  mat-button>Cancel</button>
+      </div>
+    </form>
+  </mat-card>
+</section>

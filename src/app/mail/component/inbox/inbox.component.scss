@@ -1,0 +1,27 @@
+
+
+.mat-list-item {
+    color:#000;
+}
+
+mat-divider{
+    border-color: lightgray;
+}
+
+/deep/ .mat-ink-bar{
+    background-color: #33A8FF !important;
+}
+.check{
+    
+    margin-right: 50px;
+}
+
+/deep/ .mat-checkbox-inner-container{
+border: 1.5px solid lightgray !important;
+}
+.subject{
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 25px;
+}

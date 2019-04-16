@@ -1,0 +1,6 @@
+<mat-list role="list" *ngFor="let inbox of mailDataContent">
+  <mat-list-item role="listitem" (click)="openDialog(inbox)"> <mat-checkbox color="primary" class="check"></mat-checkbox><div class="subject">{{inbox.email}}</div> <div >{{inbox.name}}</div>  </mat-list-item>
+  <mat-divider></mat-divider>
+  
+</mat-list>
+{{mailDataContent}}
